@@ -8,6 +8,16 @@ body {
   color: #0f444b;
   background-color: rgb(224, 216, 216);
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-weight: lighter;
+}
+
+h2 {
+  font-weight: bold;
+  margin: 20 px 0;
+  font-size: 30px;
+  line-height: 1.7;
+  width: 100%;
+  font-size: 20px;
 }
 
 .flex-row {
@@ -40,7 +50,7 @@ header a {
 }
 
 header nav {
-  margin: 20px 0;
+  margin: 10px 0;
 }
 
 header nav ul {
@@ -52,54 +62,224 @@ header nav ul {
 }
 
 header nav ul li a {
-  margin: 20px 0;
+  margin: 10px 0;
   padding: 10px 15px;
   font-weight: bold;
   font-size: 25px;
 }
 
 header nav ul li a:hover {
-  background: rgb(224, 216, 216);
-  color: #024e76;
-  border-radius: 15px;
+  color: #0485ca;
+  border-radius: 50px;
   text-shadow: none;
 }
 
-h1 {
-  font-weight: bolder;
-  margin: 20 px 0;
-  font-size: 40px;
+.section-title {
+  display: block;
+  margin: 10px;
+  width: 700px;
 }
 
-h2 {
-  font-weight: bolder;
-  margin: 20 px 0;
-  font-size: 30px;
+.section-title li {
+  display: block;
+  border-bottom: 5px solid;
+  color: antiquewhite;
+  padding-bottom: 0px;
+}
+
+.section-title a {
+  display: block;
+  padding: 1px;
+  color: antiquewhite;
+}
+
+.right {
+  float: right;
 }
 
 /*Subtitle and Banner*/
+
 .subtitle-banner {
-  padding: 45px 0;
-  background-image: url("../islam-portfolio/assets/Images/banner-industry-tech.jpg");
-  background-size: auto;
+  color: rgb(228, 149, 46);
   display: flex;
+  margin-bottom: auto;
   justify-content: right;
-  flex-wrap: wrap;
-  align-items: flex-start;
-  background-attachment: local;
+  bottom: 500px;
+  padding: 70px 0;
+  background-image: url("../islam-portfolio/assets/Images/banner-industry-tech.jpg");
 }
 
-.subtitle-banner h1 {
+.subtitle h1 {
   font-weight: bold;
   margin: 20px 0;
   font-size: 45px;
   color: rgb(228, 149, 46);
+  float: right;
+  width: 55%;
+}
+
+.section-header {
+  padding-top: 25px;
+  width: 100%;
+  display: inline-table;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: centers;
+  float: right;
 }
 
 /*About Me Section*/
-.about-me {
-  font-weight: bolder;
+
+.about-header h1 {
+  font-weight: bold;
+  font-size: 60px;
+  padding: 10px;
+  float: left;
+  height: 300px;
+  margin: 1 auto 1 auto;
+  display: inline-table;
+}
+
+.about-header h2 {
+  font-size: 25px;
+  width: auto;
+}
+
+.about-info {
+  width: auto;
+  float: left;
+  margin-left: 5px;
+  padding: 5px;
+  border-left: 5px solid #0f444b;
+}
+
+.about-me h2 {
+  font-size: 46px;
+  flex: 1 30%;
+  width: auto;
+}
+
+.about-img {
+  float: right;
+  height: auto;
+  width: auto;
+}
+
+/*Work Section*/
+.work-header {
+  padding-left: 110px;
+  margin: 1 auto 1 auto;
+  display: inline-table;
+  float: left;
+  height: 300px;
+  margin: 1 auto 1 auto;
+  display: inline-table;
+}
+
+.work-header h1 {
+  font-weight: bold;
+  font-size: 60px;
+  padding: 10px;
+  float: left;
+  height: 300px;
+  margin: 1 auto 1 auto;
+  display: inline-table;
+  width: auto;
+}
+
+.work-header h2 {
+  font-size: 25px;
+  width: auto;
+}
+
+.work-links {
+  font-weight: bold;
+  font-size: 45px;
+  padding: 20px;
+  float: left;
+  height: 300px;
+  margin: 1 auto 1 auto;
+  display: inline-table;
+  width: auto;
+}
+.work-sites {
+  width: 100%;
+  margin: 1 auto;
+  padding-left: 15px;
+  display: flex;
+  flex-wrap: wrap;
+  border-left: 5px solid #0f444b;
+}
+
+.work-links p {
+  margin: 10px;
+  flex: 1;
+  display: flex;
+}
+
+.work-links img {
+  width: 100%;
+  height: auto;
+  vertical-align: middle;
+  display: flex;
+  float: left;
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+}
+
+/*Contact Me Styling*/
+.contact-header {
+  padding-top: 25px;
+  width: 100%;
+  display: inline-table;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: centers;
+  float: right;
+}
+
+.contact-header h1 {
+  padding-top: 25px;
+  width: 100%;
+  display: inline-table;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: centers;
+  float: right;
+  font-weight: bold;
+  font-size: 60px;
+  padding: 10px;
+  float: left;
+  margin: 1 auto 1 auto;
+  display: inline-table;
+  width: auto;
+}
+
+.contact-info {
+  display: table;
+  margin: 0 auto;
+  flex-direction: row-reverse;
+  padding-left: 80px;
+  margin: 1 auto 1 auto;
+  display: inline-table;
+  float: left;
+  margin: 1 auto 1 auto;
+  display: inline-table;
+}
+
+.links {
+  font-weight: lighter;
+  padding-left: 10px;
   margin: 25 px 0;
   font-size: 20px;
+  margin: 20px 0;
   display: flex;
+  border-left: 5px solid #0f444b;
+}
+
+.links h2 a {
+  display: block;
+  border-bottom: 5px solid;
+  padding: 30px;
 }
